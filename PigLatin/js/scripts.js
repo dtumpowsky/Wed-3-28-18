@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     // var text1 = $(sentence).text();
     var vowelArr = ["a", "e", "i", "o", "u"];
-    var arr = sentence.split("");
+    var arr = sentence.split(" ");
     var spaces = [" "];
     var spacePos =[];
     // var firstPos =[];
