@@ -8,7 +8,7 @@ var translate = function(sentence) {
 
   for(i = 0; i < arr.length; i++)
     for(j = 0; j < vowels.length; j++)
-    console.log(vowels.length)
+    console.log(vowels.length);
 };
 
 
@@ -30,30 +30,29 @@ $(document).ready(function() {
     var spaces = [" "];
     var spacePos =[];
     // var firstPos =[];
-    var firstLetters = spacePos.map(function(space) {
-      return space + 1;
-    });
 
-    console.log(arr)
+
+    // console.log(arr)
     for (i = 0; i < arr.length; i++) {
       for (j = 0; j < vowelArr.length; j++) {
          if (arr[i] == vowelArr[j]) {
            arr[i] = "-";
-           console.log(arr[i])
+          //  console.log(arr[i])
         }
-
       }
     }
     for (i = 0; i < arr.length; i++) {
       if (arr[i] == spaces) {
         spacePos.push([i]);
-        console.log(spacePos);
-        console.log(firstLetters);
+
       }
     }
     // for (i=0; i <)
-
-
+    var firstLetters = spacePos.map(function(space) {
+      return parseInt(space) + 1;
+    });
+console.log(spacePos);
+console.log(firstLetters);
 
 
 
